@@ -228,6 +228,54 @@ body {
   white-space: break-word;
 }
 
+.footer {
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer div img {
+  width: 90%;
+
+  border-radius: 12px;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.footer div img:hover {
+  border-radius: 40px;
+}
+
+.footer span {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  background-color: var(--corTerciaria);
+  border-radius: 12px;
+  color: var(--corDeFundo);
+  font-size: 18px;
+  font-weight: bold;
+
+  padding: 5px;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
 .modal {
   position: fixed;
   width: 100vw;
